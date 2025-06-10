@@ -1,22 +1,23 @@
 body {
-  font-family: Arial, sans-serif; 
-  font-size: 16px; 
+  font-family: 'Georgia', serif; /* Thay đổi font chữ */
+  font-size: 17px; /* Tăng kích thước font một chút */
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; 
-  color: #333; 
+  background-color: #e9ebee; /* Màu nền xám nhạt hơn */
+  color: #4a4a4a; /* Màu chữ tối hơn một chút */
 }
 
 header {
-  padding: 20px;
+  padding: 25px 20px; /* Tăng padding */
   text-align: center;
+  border-bottom: 2px solid #7FA0D9; /* Thêm đường viền dưới */
 }
 
 nav {
-  background-color: #7FA0D9; 
-  padding: 10px 0;
-  margin-bottom: 20px; 
-  border-radius: 8px; 
+  background-color: #5c7ca8; /* Màu nền đậm hơn cho nav */
+  padding: 15px 0; /* Tăng padding */
+  margin-bottom: 25px; /* Tăng margin dưới */
+  border-radius: 5px; /* Giảm bo tròn góc */
 }
 
 nav ul {
@@ -27,49 +28,65 @@ nav ul {
 }
 
 p {
-  line-height: 1.6; 
+  line-height: 1.7; /* Tăng line-height */
 }
 
 li{
     display: inline-block;
     width: auto;
-    margin: 0 15px ;
+    margin: 0 10px ; /* Giảm margin ngang */
 }
 
 li a{
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 15px;
+    color: #ffffff; /* Màu chữ trắng */
+    font-weight: normal; /* Bỏ bold */
+    padding: 12px 18px; /* Điều chỉnh padding */
+    transition: background-color 0.3s, color 0.3s; /* Thêm hiệu ứng chuyển đổi */
+}
+
+li a:hover {
+    background-color: #ffffff; /* Nền trắng khi hover */
+    color: #5c7ca8; /* Màu chữ nav khi hover */
+    border-radius: 5px;
 }
 
 main {
-  background-color: #ffffff; 
-  font-size: 1.1em;
-  padding: 20px;
-  margin: 20px; 
-  border-radius: 10px;
+  background-color: #fdfdfd; /* Màu nền trắng hơn cho main */
+  font-size: 1.15em; /* Tăng nhẹ font-size */
+  padding: 25px; /* Tăng padding */
+  margin: 25px; /* Tăng margin */
+  border-radius: 8px; /* Điều chỉnh bo tròn góc */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Thêm box-shadow nhẹ */
 }
 
 h1 {
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #2C3E50; 
-  font-size: 2.5em; 
-  margin-top: 0; 
-  margin-bottom: 20px;
+  font-family: 'Verdana', sans-serif; /* Thay đổi font cho h1 */
+  color: #3a537b; /* Màu chữ đậm hơn cho h1 */
+  font-size: 2.8em; /* Tăng kích thước h1 */
+  margin-top: 10px; /* Điều chỉnh margin-top */
+  margin-bottom: 25px; /* Tăng margin-bottom */
 }
 
 main a {
     text-decoration: none;
+    color: #5c7ca8; /* Màu link trong main */
+    transition: text-decoration 0.3s;
+}
+
+main a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
 }
 
 footer {
-    background-color: beige;
-    font-size: 1.1em;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 15px;
+    background-color: #dcdcdc; /* Màu nền xám nhạt cho footer */
+    color: #555555; /* Màu chữ tối hơn cho footer */
+    font-size: 1em; /* Giảm font-size một chút */
+    padding: 25px; /* Tăng padding */
+    margin: 25px; /* Tăng margin */
+    border-radius: 8px; /* Điều chỉnh bo tròn góc */
+    text-align: center; /* Căn giữa nội dung footer */
 }
 
 footer p {
@@ -78,8 +95,22 @@ footer p {
 
 footer a {
     text-decoration: none;
+    color: #5c7ca8; /* Màu link trong footer */
+    transition: text-decoration 0.3s;
 }
 
-div img {
+footer a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+div img { /* Giữ nguyên hoặc điều chỉnh nếu cần */
     text-align: center;
+}
+img { /* Căn giữa hình ảnh trong header và làm nó responsive hơn */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bo tròn góc nhẹ cho ảnh */
 }
