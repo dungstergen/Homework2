@@ -114,3 +114,18 @@ img { /* Căn giữa hình ảnh trong header và làm nó responsive hơn */
     height: auto;
     border-radius: 5px; /* Bo tròn góc nhẹ cho ảnh */
 }
+
+/* Thêm style cho ảnh nằm ngang trong neighborhood và parks */
+.neighborhood-gallery, .parks-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.neighborhood-gallery img, .parks-gallery img {
+  margin: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
